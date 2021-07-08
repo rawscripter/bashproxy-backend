@@ -1,0 +1,25 @@
+:root {
+    --theme-dark: #2C2F33;
+    --theme-blue: #7289DA;
+    --gray: #999999;
+    --light-gray: #E6E6E6;
+    --lightest-gray: #F8F8F8;
+}
+
+body, html {
+    height: 100%;
+    margin: auto;
+    background-color: var(--theme-dark);
+    color: var(--lightest-gray);
+    transition: transform ease-in .4s;
+    font-size: 16px;
+}
+
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    height: 100%;
+}
