@@ -32,7 +32,7 @@
                 <div class="product-variation">
                   <select v-model="selectedPlan" name="cars" class="select">
                     <option v-for="(plan,index) in dataPlans" :key="plan.id" :value="plan.id">
-                      ${{ plan.price }}/${{ plan.quantity }}
+                      ${{ plan.price }}/{{ plan.quantity }}
                     </option>
                   </select>
                 </div>

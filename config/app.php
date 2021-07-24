@@ -14,8 +14,8 @@ return [
     */
     'bash_proxy_base_url' => env('BASE_URL', 'https://resi.bashproxy.com:5200'),
     'bash_proxy_token' => env('TOKEN', 'jason+pleasedonothackuskthxbye'),
-    'stripe_public_key' => env('STRIPE_PUBLIC_KEY','pk_live_eDHjR8bhOPLveGjxPPjuIaVi0003ijtM09'),
-    'stripe_secret_key' => env('STRIPE_SECRET_KEY','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'),
+    'stripe_public_key' => env('STRIPE_PUBLIC_KEY',''),
+    'stripe_secret_key' => env('STRIPE_SECRET_KEY',''),
 
     'name' => env('APP_NAME', 'Laravel'),
 
