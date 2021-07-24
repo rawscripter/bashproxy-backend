@@ -84,25 +84,53 @@ export default {
         {
           id: 1,
           price: 10.00,
-          quantity: '2GB',
-          data: '2000',
-          price_id: 'price_1J9tUwFwlPUjEiMMiW4OyWuU',
+          quantity: '1GB',
+          data: '1000',
+          price_id: 'price_1JGVvFFUYXxPczkJbQfYvDdL',
         },
         {
           id: 2,
-          price: 25.00,
-          quantity: '3GB',
-          data: '3000',
-          price_id: 'price_1J9w1IFwlPUjEiMM5JcplDp2',
+          price: 20.00,
+          quantity: '2GB',
+          data: '2000',
+          price_id: 'price_1JGVwrFUYXxPczkJVSm7Dmwn',
         },
         {
           id: 3,
-          price: 100.00,
+          price: 45.00,
+          quantity: '5GB',
+          data: '5000',
+          price_id: 'price_1JGW7CFUYXxPczkJ9MNwoa9f',
+
+        }, {
+          id: 4,
+          price: 80.00,
           quantity: '10GB',
           data: '10000',
-          price_id: 'price_1J9w2lFwlPUjEiMMl8ejFeKW',
+          price_id: 'price_1JGW7cFUYXxPczkJaPlKZ08Y',
 
-        }
+        }, {
+          id: 5,
+          price: 150.00,
+          quantity: '20GB',
+          data: '20000',
+          price_id: 'price_1JGW7xFUYXxPczkJupGpteY5',
+
+        }, {
+          id: 6,
+          price: 350.00,
+          quantity: '50GB',
+          data: '50000',
+          price_id: 'price_1JGW8SFUYXxPczkJPDcI2mrD',
+
+        }, {
+          id: 7,
+          price: 650.00,
+          quantity: '100GB',
+          data: '100000',
+          price_id: 'price_1JGW8gFUYXxPczkJT1vbOpAY',
+
+        },
       ],
       selectedPlan: 1
     }

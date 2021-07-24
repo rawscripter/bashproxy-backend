@@ -52,12 +52,12 @@ class StripeController extends Controller
                     $couponCode = $request->coupon_code;
                 } else {
                     $res['success'] = false;
-                    $res['message'] = 'Discount Code is not Valid';
+                    $res['message'] = 'Discount Code is not Valid.';
                     return response()->json($res);
                 }
             } catch (\Exception $exception) {
                 $res['success'] = false;
-                $res['message'] = 'Discount Code is not Valid';
+                $res['message'] = 'Discount Code is not Valid..';
                 return response()->json($res);
             }
         }

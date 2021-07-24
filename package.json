@@ -41,15 +41,16 @@
         "tls-browserify": "^0.2.2",
         "util": "^0.11.1",
         "vue": "^2.6.12",
+        "vue-apexcharts": "^1.6.1",
         "vue-copy-to-clipboard": "^1.0.3",
         "vue-ellipse-progress": "^1.3.0",
         "vue-loader": "^15.9.7",
+        "vue-page-transition": "^0.2.2",
         "vue-radial-progress": "^0.3.2",
         "vue-router": "^3.5.1",
         "vue-template-compiler": "^2.6.12",
         "vue-toastification": "^1.7.11",
-        "vuex": "^3.6.2",
-        "vue-page-transition": "^0.2.2"
+        "vuex": "^3.6.2"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "~4.5.0",

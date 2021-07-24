@@ -13,6 +13,11 @@
     <title> Dashboard | BashProxy </title>
     <script src="https://js.stripe.com/v3/"></script>
     <link rel="stylesheet" href="{{asset('css/app.css')}}?time={{time()}}">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
     @csrf
 </head>
 <body>
