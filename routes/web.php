@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/payment/success', [\App\Http\Controllers\OrderController::class, 'createNewOrderOnPaymentSuccess'])->name('stripe.success');
+Route::get('/test/order', [\App\Http\Controllers\OrderController::class, 'testOrder']);
 
 Route::get('/clear/laravel/cache', function () {
     Artisan::call('cache:clear');

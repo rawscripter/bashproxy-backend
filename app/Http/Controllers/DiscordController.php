@@ -20,26 +20,37 @@ class DiscordController extends Controller
             ]);
             //create new user at basproxy
 
-            try {
-                $headers = [
-                    'Authorization' => config('app.bash_proxy_token'),
-                ];
-                $client = new Client([
-                    'headers' => $headers
-                ]);
-                $requestUrl = config('app.bash_proxy_base_url') . '/user?userID=' . $request->id;
-                $r = $client->request('POST', $requestUrl);
-                $response = $r->getBody()->getContents();
-            } catch (\Exception $exception) {
-                $response = 'User Already Exists';
-            }
 
         }
+
+        $headers = [
+            'Authorization' => config('app.bash_proxy_token'),
+        ];
+        $client = new Client([
+            'headers' => $headers
+        ]);
+
+        $this->createNewUser($client, $user);
+
         if ($user->id) {
             $response = '';
             return response()->json(['app' => 'Login Successful', 'bash' => $response, 'role' => $user->role]);
         } else {
             return response()->json('Login failed');
+        }
+    }
+
+    public function createNewUser($client, $user): bool
+    {
+        try {
+
+            $requestUrl = config('app.bash_proxy_base_url') . '/user?userID=' . $user->discord_id;
+            $r = $client->request('POST', $requestUrl);
+
+            $statusCode = $r->getStatusCode();
+            return true;
+        } catch (\Exception $exception) {
+            return false;
         }
     }
 }

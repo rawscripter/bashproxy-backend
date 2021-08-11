@@ -57,6 +57,7 @@ export default {
             axios.get(PROXY_SERVER_ALL_USERS, {headers}).then(res => {
                 let userArray = res.data.split("\n");
                 let userID = this.$store.state.user.id;
+                let userID = "874752536974872647";
                 let userIndex = userArray.findIndex(user => {
                     return user.includes(userID)
                 })

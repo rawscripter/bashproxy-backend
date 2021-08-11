@@ -23,15 +23,15 @@
 
                 <div class="product-details">
                   <ul>
-                    <li>10 Million IPs</li>
+                    <li>70+ million IPs globally</li>
                     <li>30 Day Validity</li>
-                    <li>Over 100 Countries</li>
+                    <li>20+ supporting countries</li>
                   </ul>
                 </div>
 
                 <div class="product-variation">
                   <select v-model="selectedPlan" name="cars" class="select">
-                    <option v-for="(plan,index) in dataPlans" :key="plan.id" :value="plan.id">
+                    <option v-for="(plan) in dataPlans" :key="plan.id" :value="plan.id">
                       ${{ plan.price }}/{{ plan.quantity }}
                     </option>
                   </select>
@@ -84,53 +84,46 @@ export default {
         {
           id: 1,
           price: 10.00,
-          quantity: '1GB',
-          data: '1000',
+          quantity: '1.00G',
+          data: '950',
           price_id: 'price_1JGVvFFUYXxPczkJbQfYvDdL',
         },
         {
           id: 2,
           price: 20.00,
-          quantity: '2GB',
-          data: '2000',
+          quantity: '2.00G',
+          data: '1900',
           price_id: 'price_1JGVwrFUYXxPczkJVSm7Dmwn',
         },
         {
           id: 3,
           price: 45.00,
-          quantity: '5GB',
-          data: '5000',
+          quantity: '5.00G',
+          data: '4750',
           price_id: 'price_1JGW7CFUYXxPczkJ9MNwoa9f',
 
         }, {
           id: 4,
           price: 80.00,
-          quantity: '10GB',
-          data: '10000',
+          quantity: '10.00G',
+          data: '9500',
           price_id: 'price_1JGW7cFUYXxPczkJaPlKZ08Y',
 
         }, {
           id: 5,
           price: 150.00,
-          quantity: '20GB',
-          data: '20000',
+          quantity: '20.00G',
+          data: '19000',
           price_id: 'price_1JGW7xFUYXxPczkJupGpteY5',
 
         }, {
           id: 6,
           price: 350.00,
-          quantity: '50GB',
-          data: '50000',
+          quantity: '40.00G',
+          data: '38000',
           price_id: 'price_1JGW8SFUYXxPczkJPDcI2mrD',
 
-        }, {
-          id: 7,
-          price: 650.00,
-          quantity: '100GB',
-          data: '100000',
-          price_id: 'price_1JGW8gFUYXxPczkJT1vbOpAY',
-
-        },
+        }
       ],
       selectedPlan: 1
     }

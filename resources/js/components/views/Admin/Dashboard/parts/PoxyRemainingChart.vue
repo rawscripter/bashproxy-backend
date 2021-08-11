@@ -8,7 +8,7 @@
                                  :stopColor="'#FF6347'"
                                  :completed-steps="usedPackage"
                                  :total-steps="totalPackage">
-                <p class="m-0 font-weight-bolder">Total: {{ totalPackage }}</p>
+                <p class="m-0 font-weight-bolder">Total: {{ totalPackage / 1000 }}G</p>
                 <p class="m-0 font-weight-bolder">Used: {{ usedPackage }}</p>
             </radial-progress-bar>
             <h3 class="font-weight-bolder">Data Remaining: {{ remainingPackage }}</h3>

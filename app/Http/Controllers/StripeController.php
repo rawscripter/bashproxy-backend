@@ -100,5 +100,4 @@ class StripeController extends Controller
         }
         return response()->json($res);
     }
-
 }

@@ -22,6 +22,7 @@ class AdminDashboardController extends Controller
                 $user->orWhere('name', 'LIKE', "%" . $request->searchData . "%");
                 $user->orWhere('discord_id', 'LIKE', "%" . $request->searchData . "%");
             }
+            $user->orderBy('created_at','desc');
             $customers = $user->get();
 
             $res['customers'] = CustomerResource::collection($customers);
@@ -51,6 +52,7 @@ class AdminDashboardController extends Controller
                 });
                 $order->orWhere('discount_code', 'LIKE', "%" . $searchQuery . "%");
             }
+            $order->orderBy('created_at','desc');
             $orders = $order->get();
 
             $res['orders'] = OrderResource::collection($orders);

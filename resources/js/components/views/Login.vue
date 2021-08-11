@@ -24,8 +24,8 @@ export default {
   name: "Login",
   methods: {
     loginWithDiscord() {
-      let url = `https://discord.com/api/oauth2/authorize?client_id=848990428590112788&redirect_uri=https%3A%2F%2Fdashboard.bashproxy.com%2Fdiscord%2Fcallback&response_type=token&scope=identify%20email`;
-      // let url = `https://discord.com/api/oauth2/authorize?client_id=848990428590112788&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2Fdiscord%2Fcallback&response_type=token&scope=identify%20email`;
+      // let url = `https://discord.com/api/oauth2/authorize?client_id=848990428590112788&redirect_uri=https%3A%2F%2Fdashboard.bashproxy.com%2Fdiscord%2Fcallback&response_type=token&scope=identify%20email`;
+      let url = `https://discord.com/api/oauth2/authorize?client_id=848990428590112788&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2Fdiscord%2Fcallback&response_type=token&scope=identify%20email`;
       window.location.href = url;
     },
   },
